@@ -7,15 +7,15 @@ description: >-
 
 homepage: https://github.com/kiwi-bop/intl_generator
 environment:
-  sdk: ">=3.4.4 <4.0.0"
+  sdk: ">=3.8.0 <4.0.0"
 
 dependencies:
-  collection: ">=1.15.0 <2.0.0"
-  analyzer: ">=2.1.0 <8.0.0"
-  args: ">=2.1.0 <3.0.0"
-  dart_style: ^3.0.6
-  intl: ">=0.17.0 <2.0.0"
-  path: ">=1.8.0 <3.0.0"
-  petitparser: "^6.0.2"
+  collection: ">=1.15.0 "
+  analyzer: ">=2.1.0 "
+  args: ">=2.1.0"
+  dart_style: ^3.1.2
+  intl: ">=0.17.0 "
+  path: ">=1.8.0 "
+  petitparser: ^7.0.1
 dev_dependencies:
-  test: ^1.21.1
+  test: ^1.26.3

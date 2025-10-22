@@ -9,6 +9,7 @@ import 'dart:io';
 import 'package:args/args.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:intl_generator/src/message_rewriter.dart';
+import 'package:pub_semver/pub_semver.dart';
 
 main(List<String> args) {
   var parser = new ArgParser();
@@ -21,7 +22,7 @@ main(List<String> args) {
     exit(0);
   }
 
-  var formatter = new DartFormatter();
+  var formatter = new DartFormatter(languageVersion: Version.none);
   for (var inputFile in rest) {
     var outputFile = inputFile;
     var file = new File(inputFile);
